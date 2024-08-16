@@ -11,7 +11,7 @@ const[formData,setFormData]=useState({
   // comments:""
 })
 
-const navigate = useNavigate();
+// const navigate = useNavigate();
 const handleChange=(e)=>{
   const {name,value } = e.target;
   setFormData({...formData,[name]:value})
@@ -88,7 +88,7 @@ return (
                 //  onChange={handleChange} 
                  autoComplete="on"></input>
             </div>
-            <button type='submit' className='btn btn-primary m-1' >Save</button>
+            <button type='submit' className='btn  btn-success m-1' >Save</button>
             </form>
           
     </div>
