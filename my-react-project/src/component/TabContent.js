@@ -2,7 +2,7 @@ import React from 'react';
 import Table from './Table';
 // import ParentComponent from './ParentComponent';
 
-const TabContent = ({ activeTab,courseDataArray}) => {
+const TabContent = ({ activeTab, courseDataArray }) => {
   // console.log('courseDataArray',courseDataArray)
   const getTableData = (tabId) => {
     switch (tabId) {
@@ -10,14 +10,14 @@ const TabContent = ({ activeTab,courseDataArray}) => {
         return [
           {
             headers: ['Course Name', 'Start Date', 'Expected end Date'],
-            rows: courseDataArray.length > 0?
-             courseDataArray.map(newCourseData=>[
-             newCourseData.courseName,
-              newCourseData.startDate,
-              newCourseData.endDate,
-              // newCourseData.complition
-            ])
-            :[]  
+            rows: courseDataArray.length > 0 ?
+              courseDataArray.map(newCourseData => [
+                newCourseData.courseName,
+                newCourseData.startDate,
+                newCourseData.endDate,
+                // newCourseData.complition
+              ])
+              : []
           },
         ];
       case 'tab2':
