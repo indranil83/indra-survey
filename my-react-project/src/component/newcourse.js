@@ -24,7 +24,7 @@ const Newcourse = () => {
     e.preventDefault();
     // console.log('onAddCourse prop:', onAddCourse); 
     dispatch(addCourse(formData));
-    
+
     setFormData({
       courseName: "",
       startDate: "",
@@ -34,7 +34,7 @@ const Newcourse = () => {
 
     });
     // navigate('/tabs', { state: { courseDataArray: [formData] } })
-    navigate('/tabs'); 
+    navigate('/tabs');
 
     // console.log(courseDataArray)
   }
